@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>Alexander Marroquín</h1>
+        <h1>PAOLO ALEXANDER MARROQUIN DE LA CRUZ</h1>
         <nav>
           <button onClick={() => setSection('perfil')}>Perfil</button>
           <button onClick={() => setSection('experiencia')}>Experiencia</button>
@@ -32,8 +32,8 @@ function App() {
           <section>
             <h2>Experiencia</h2>
             <ul>
-              <li>Desarrollador Full Stack en Proyecto XYZ (2024)</li>
-              <li>Desarrollador Frontend en Empresa ABC (2023)</li>
+              <li>Desarrollador Full Stack en Proyectos  (2025)</li>
+              <li>Desarrollador Frontend en Empresa  (2025)</li>
             </ul>
           </section>
         )}
@@ -72,7 +72,7 @@ function App() {
               </li>
               <li>
                 <a
-                  href="https://alexander.github.io/hoja-de-vida"
+                  href="doskihuaski1234/hoja-de-vida-react"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,12 +88,12 @@ function App() {
             <h2>Contacto</h2>
             <div className="contact-buttons">
               <button
-                onClick={() => window.open('https://github.com/alexander', '_blank')}
+                onClick={() => window.open('https://github.com/doskihuaski1234', '_blank')}
               >
                 💻 GitHub
               </button>
               <button
-                onClick={() => window.open('https://www.linkedin.com/feed/', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/alexander-marroquin-junior-738378278/', '_blank')}
               >
                 🔗 LinkedIn
               </button>
