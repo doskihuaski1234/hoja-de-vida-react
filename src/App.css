@@ -1,0 +1,102 @@
+/* 🌈 Fondo general con efecto degradado animado */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+}
+
+/* 🌀 Animación del fondo */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🪩 Contenedor principal */
+#root {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* 💫 Logo animado */
+.logo {
+  height: 7em;
+  padding: 1.5em;
+  transition: transform 0.5s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 1em #61dafb);
+}
+.logo:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: drop-shadow(0 0 2em #00ffff);
+}
+
+/* ✨ Rotación lenta automática */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo.spin {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* 🧩 Tarjetas o secciones */
+.card {
+  padding: 2em;
+  margin: 1.5rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+/* 📘 Enlaces */
+a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+  color: #61dafb;
+  text-shadow: 0 0 10px #61dafb;
+}
+
+/* 🧠 Texto complementario */
+.read-the-docs {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* 🪄 Botones personalizados */
+button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0.8em 2em;
+  margin-top: 1em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.4);
+}
+button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.7);
+  transform: translateY(-3px);
+}
