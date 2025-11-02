@@ -65,6 +65,9 @@ export default defineConfig([
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
+
+## Despliegue
+https://hoja-de-vida-react-4lc3.vercel.app/
       },
       // other options...
     },
